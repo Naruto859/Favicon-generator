@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-nextjs-
 
       - name: Install dependencies (force install without lock file)
-        run: npm install
+        run: npm install --legacy-peer-deps
 
       - name: Build with Next.js
         run: npx next build
